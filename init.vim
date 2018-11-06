@@ -11,6 +11,9 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 
 Plugin 'rust-lang/rust.vim'
+Plugin 'neovimhaskell/haskell-vim'
+Plugin 'junegunn/goyo.vim'
+Plugin 'kien/ctrlp.vim'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -31,6 +34,8 @@ set linespace=0         " Set line-spacing to minimum.
 set nojoinspaces        " Prevents inserting two spaces after punctuation
 " Remaps switch pane to tab.
 map <TAB> <C-w>
+noremap j gj
+noremap k gk
 " Remaps terminal escape to esc.
 tnoremap <Esc> <C-\><C-n>
 set background=dark
@@ -40,3 +45,5 @@ filetype on
 if @% == ""
   bd " For nvim-qt, when you open a file
 endif
+let g:goyo_height='100%'
+let g:goyo_width=79
