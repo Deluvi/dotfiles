@@ -49,13 +49,13 @@ endif
 let g:goyo_height='100%'
 let g:goyo_width=79
 " Remaps for azerty keyboard comfort
-map & 1
-map é 2
-map " 3
-map ' 4
-map ( 5
-map - 6
-map è 7
-map _ 8
-map ç 9
-map à 0
+noremap & 1
+noremap é 2
+noremap " 3
+noremap ' 4
+noremap ( 5
+noremap - 6
+noremap è 7
+noremap _ 8
+noremap ç 9
+noremap à 0
