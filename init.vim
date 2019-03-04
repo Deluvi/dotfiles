@@ -2,14 +2,15 @@ set nocompatible              " be iMproved, required
 filetype off                  " required
 
 " set the runtime path to include Vundle and initialize
-set rtp+=~\AppData\Local\nvim\bundle\Vundle.vim " Windows version
+"set rtp+=~\AppData\Local\nvim\bundle\Vundle.vim " Windows version
+set rtp+=~/.config/nvim/bundle/Vundle.vim
 call vundle#begin()
 " alternatively, pass a path where Vundle should install plugins
 "call vundle#begin('~/some/path/here')
 
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
-
+Plugin 'chriskempson/base16-vim'
 Plugin 'rust-lang/rust.vim'
 Plugin 'neovimhaskell/haskell-vim'
 Plugin 'junegunn/goyo.vim'
@@ -47,3 +48,14 @@ if @% == ""
 endif
 let g:goyo_height='100%'
 let g:goyo_width=79
+" Remaps for azerty keyboard comfort
+map & 1
+map é 2
+map " 3
+map ' 4
+map ( 5
+map - 6
+map è 7
+map _ 8
+map ç 9
+map à 0
