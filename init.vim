@@ -14,7 +14,7 @@ Plugin 'chriskempson/base16-vim'
 Plugin 'rust-lang/rust.vim'
 Plugin 'neovimhaskell/haskell-vim'
 Plugin 'junegunn/goyo.vim'
-Plugin 'kien/ctrlp.vim'
+Plugin 'ctrlpvim/ctrlp.vim'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
