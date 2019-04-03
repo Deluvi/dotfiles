@@ -12,9 +12,11 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'chriskempson/base16-vim'
 Plugin 'rust-lang/rust.vim'
-Plugin 'neovimhaskell/haskell-vim'
 Plugin 'junegunn/goyo.vim'
 Plugin 'ctrlpvim/ctrlp.vim'
+Plugin 'Shougo/deoplete.nvim'
+Plugin 'sebastianmarkow/deoplete-rust'
+Plugin 'ujihisa/neco-look'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -41,6 +43,7 @@ noremap k gk
 tnoremap <Esc> <C-\><C-n>
 set background=dark
 let $NVIM_TUI_ENABLE_TRUE_COLOR=1
+set termguicolors
 colorscheme base16-default-dark
 filetype on
 if @% == ""
@@ -59,3 +62,9 @@ noremap è 7
 noremap _ 8
 noremap ç 9
 noremap à 0
+noremap 3 "
+
+" Deoplete stuff
+let g:deoplete#enable_at_startup = 1
+let g:deoplete#sources#rust#racer_binary='/Users/noebaylac/.cargo/bin/racer'
+let g:deoplete#sources#rust#rust_source_path='/Users/noebaylac/misc/rust/src'
