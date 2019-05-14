@@ -17,6 +17,7 @@ Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'Shougo/deoplete.nvim'
 Plugin 'sebastianmarkow/deoplete-rust'
 Plugin 'ujihisa/neco-look'
+Plugin 'scrooloose/nerdtree'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
