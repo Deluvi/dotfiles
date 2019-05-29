@@ -69,3 +69,6 @@ noremap 3 "
 let g:deoplete#enable_at_startup = 1
 let g:deoplete#sources#rust#racer_binary='/Users/noebaylac/.cargo/bin/racer'
 let g:deoplete#sources#rust#rust_source_path='/Users/noebaylac/misc/rust/src'
+
+" Rust.vim stuff
+let g:rustfmt_autosave = 1 " Enable fmt autosave on Rust
