@@ -1,5 +1,3 @@
-# Add this file on your .bashrc using "source PATH/TO/.pistarc"
-
 export PS1='$(pista -m)'
 
 export PROMPT_CHAR="$"
@@ -13,12 +11,15 @@ export CWD_COLOR="bright blue"
 
 export EXPAND_TILDE=0
 
+# symbol to represent clean repo state
 export GIT_CLEAN="✔"
 export GIT_CLEAN_COLOR="green"
 
+# symbol to represent unstaged repo state
 export GIT_WT_MODIFIED="✘"
 export GIT_WT_MODIFIED_COLOR="red"
 
+# symbol to represent staged repo state
 export GIT_INDEX_MODIFIED="●"
 export GIT_INDEX_MODIFIED_COLOR="yellow"
 
